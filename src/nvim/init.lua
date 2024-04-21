@@ -1,3 +1,11 @@
+vim.opt.number = true
+vim.opt.colorcolumn = "81"
+
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -24,7 +32,7 @@ require("lazy").setup({
       "3rd/image.nvim"
     }
   },
-  "alexghergh/nvim-tmux-navigation",
+  "christoomey/vim-tmux-navigator",
   "lukas-reineke/virt-column.nvim",
   { "lervag/vimtex",
     init = function()
