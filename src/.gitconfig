@@ -1,0 +1,19 @@
+[user]
+	email = 53884490+austinlucaslake@users.noreply.github.com
+	name = Austin Lucas Lake
+	signingkey = {{ gpg_fingerprint.stdout }}
+[commit]
+	gpgsign = true
+	verbose = true
+[pull]
+	ff = only
+[alias]
+	ff = merge
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[diff]
+	algorithm = histogram
+[push]
+	autoSetupRemote = true
