@@ -1,14 +1,12 @@
 [user]
-	email = 53884490+austinlucaslake@users.noreply.github.com
+	email = git@austinlucaslake.com
 	name = Austin Lucas Lake
-	signingkey = {{ gpg_fingerprint.stdout }}
+	signingkey = {{ gpg_key.fingerprints[0] }}
 [commit]
 	gpgsign = true
 	verbose = true
 [pull]
 	ff = only
-[alias]
-	ff = merge
 [init]
 	defaultBranch = main
 [core]
